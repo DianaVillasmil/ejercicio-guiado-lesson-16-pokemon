@@ -12,14 +12,20 @@ function Pokemon(nombre, color, poderAtaque){
   } 
 this.aumentarNivelAmistad = function(valor) {
   this.nivelDeAmistad = this.nivelDeAmistad + valor;
-}
+
 this.atacar = function(pokemon) {
   pokemon.vida = pokemon.vida - this.poderAtaque;
 }
 }
-const Pikachu = new Pokemon("Pikachu", "Amarillo", 100);
-const Charmander = new Pokemon("Charmander", "rojo", 20);
+const Pikachu = new Pokemon("Pikachu", "Amarillo", 112);
+const Charmander = new Pokemon("Charmander", "rojo", 116);
+const Bulbasaur = new Pokemon("Bulbasaur", "Verde", 118);
+const Charmander = new Pokemon("Squirtle", "azul", 94);
 
 Pikachu.atacar(Charmander);
+
+function atacar() {
+  
+}
 
 console.log(Charmander.vida);
