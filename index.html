@@ -10,24 +10,22 @@
     <h1>Batalla de Pokémones</h1>
     <form action="">
 	    
-      <select id="" required="">
-        <option value="pikachu">Pikachu</option>
-        <option value="charmander">Charmander</option>
-        <option value="bquirtle">Bquirtle</option>
-        <option value="squirtle">Squirtle</option>
+      <select id="atacante" required="">
+
       </select>
 
-      <select id="" required="">
-        <option value="pikachu">Pikachu</option>
-        <option value="charmander">Charmander</option>
-        <option value="bquirtle">Bquirtle</option>
-        <option value="squirtle">Squirtle</option>
+      <select id="atacado" required="">
+
       </select>
       <br>
       <br>
-      <input type="submit" value="Atacar" id="boton"/>
+      <input type="submit" value="Atacar" id="boton" onclick="ataque(); return false;" />
+
+      <div id="mensaje"></div>
     </form>
 	  <img src="./assets/pokemon_ash.jpg" height="720px" / >
+
+    <script src="./assets/js/javascript.js"></script>
   </body>
 	
 </html>
